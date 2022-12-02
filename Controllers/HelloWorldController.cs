@@ -16,6 +16,7 @@ public class HelloWorldController:  ControllerBase
         helloWorldService = helloWorld;
     }
 
+    [HttpGet]
     [Route("api/test/[controller]")]
     public IActionResult Get()
     {
