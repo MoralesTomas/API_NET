@@ -8,14 +8,18 @@ public class HelloWorldController:  ControllerBase
 {
     IHelloWorldService helloWorldService;
 
-    public HelloWorldController(IHelloWorldService helloWorld)
+    private readonly ILogger<HelloWorldController> _logger;
+
+    public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger)
     {
+        _logger = logger;
         helloWorldService = helloWorld;
     }
 
     [Route("api/test/[controller]")]
     public IActionResult Get()
     {
+        _logger.LogDebug("mandando el hola mundo desde el controlador de HelloWorld");
         return Ok(helloWorldService.GetHelloWorld());
     }
 }
