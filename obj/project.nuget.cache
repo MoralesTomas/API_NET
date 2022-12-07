@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NKaAPMyRpi6I2mjfoZI4EyTQlVNwj140EPSyp2fMNNxjvZ2n+6D8Ha9GLHQsFTulqcs3AWVFn/y61budQmypng==",
+  "dgSpecHash": "0yfGI1SkQOsUQcL1y/bESS3o8snyBxGiZLMlYSgrDnOlLy0h3uxxafppCZnAbCxZGYkdMCpkdS4xbM+iTbIXng==",
   "success": true,
-  "projectFilePath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj",
+  "projectFilePath": "d:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenov\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lenov\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

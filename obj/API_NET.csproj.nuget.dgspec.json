@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj": {}
+    "d:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj": {}
   },
   "projects": {
-    "D:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj": {
+    "d:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj",
+        "projectUniqueName": "d:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj",
         "projectName": "API_NET",
-        "projectPath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj",
+        "projectPath": "d:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\API_NET.csproj",
         "packagesPath": "C:\\Users\\lenov\\.nuget\\packages\\",
-        "outputPath": "D:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\obj\\",
+        "outputPath": "d:\\PERSONA\\Aprendizaje\\NET_C#\\APIS_NET\\API_NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenov\\AppData\\Roaming\\NuGet\\NuGet.Config",

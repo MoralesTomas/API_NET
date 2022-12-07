@@ -8,7 +8,6 @@ namespace API_NET.Controllers;
 public class CategoriaController: ControllerBase
 {
 
-    //recibimos la interfaz no la clase como tal
     ICategoriaService categoriaService;
 
     public CategoriaController(ICategoriaService service)
