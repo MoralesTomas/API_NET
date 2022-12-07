@@ -19,6 +19,7 @@ namespace API_NET.Services
 
         public async Task Save(Categoria categoria)
         {
+            categoria.CategoriaID = new Guid();
             context.Add(categoria);
             await context.SaveChangesAsync();
         }

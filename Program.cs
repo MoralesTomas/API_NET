@@ -1,4 +1,5 @@
 using API_NET.Services;
+using proyectoEF.Contexto;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//agregando el servicio de BD
+builder.Services.AddSqlServer<TareasContext>(builder.Configuration.GetConnectionString("cnTareas"));
 
 //esto es para la inyeccion de dependencias
 //especificamente este es para pasar la interfaz y luego la clase esto limita si necesitamos mandar parametros a la clase

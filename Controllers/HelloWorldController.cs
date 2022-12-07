@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using proyectoEF.Contexto;
 
 namespace API_NET.Controllers;
 
@@ -7,13 +8,16 @@ namespace API_NET.Controllers;
 public class HelloWorldController:  ControllerBase
 {
     IHelloWorldService helloWorldService;
+    TareasContext dbcontext;
 
     private readonly ILogger<HelloWorldController> _logger;
 
-    public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger)
+    public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger,TareasContext db)
     {
         _logger = logger;
         helloWorldService = helloWorld;
+        dbcontext = db;
+
     }
 
     [HttpGet]
@@ -22,5 +26,14 @@ public class HelloWorldController:  ControllerBase
     {
         _logger.LogDebug("mandando el hola mundo desde el controlador de HelloWorld");
         return Ok(helloWorldService.GetHelloWorld());
+    }
+
+    [HttpGet]
+    [Route("createdb")]
+    public IActionResult CreateDatabase()
+    {
+        dbcontext.Database.EnsureCreated();
+
+        return Ok();
     }
 }
